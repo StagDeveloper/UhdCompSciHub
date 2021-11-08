@@ -1,0 +1,240 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <style>
+            @font-face{
+                font-family: minimal;
+                src: url("minimalising.otf");
+                }
+            body {
+                margin: 0;
+                font-size: 28px;
+                font-family: Arial, Helvetica, sans-serif;
+                background-color: black;
+                color: white;
+                width: 100%;
+            }
+
+            .topControl {
+                width: 100%;
+                align-items: center;
+                justify-content: center;
+                bottom: 0;
+
+            }
+            .topHeaderText{
+                position: absolute;
+                top: 0;
+                left: 0;
+                padding-top: 150px;
+                width: 100%;
+                z-index: 1;
+
+            }
+            .topHeaderText h1{
+                font-family: minimal;
+                font-size: 10vw;
+                margin: 0;
+                width: 100%;
+
+            }
+            .topHeaderText p {
+                font-size: 2vw;
+                margin: 0;
+                font-family: minimal;
+                
+            }
+    /*changed navi to an element to for JS*/
+            #navi {
+                overflow: hidden;
+                background-color: rgba(100, 100, 100, 0.6);
+                backdrop-filter: blur(10px);
+                z-index: 5;
+            }
+
+            #navi a {
+                float: left;
+                display: block;
+                color: #f2f2f2;
+                text-align: center;
+                padding: 14px 16px;
+                text-decoration: none;
+                font-size: 20px;
+            }
+            #navi a:hover {
+                background-color: #ddd;
+                color: black;
+            }
+            .mainArea{
+                padding-left: 10%;
+                padding-right: 10%;
+            }
+            #gatorade{
+                display: inline;
+                float: left;
+
+            }
+            .resourcebox {
+                display: block;
+                background-image: url("pape1.jpg");
+                background-position: center;
+                color: rgba(0, 0, 0, 0.8);
+                width: 100%;
+                border-radius: 12px;
+                z-index: -1;
+            }
+            #bookade{
+                display: inline;
+                float: right;
+                }
+            .clubBox {
+                display: block;
+                background-image: url("pape3.jpg");
+                background-position: center;
+                color: white;
+                width: 100%;
+                border-radius: 12px;
+                z-index: -1;
+
+            }
+            #laptopade{
+                display: inline;
+                float: left;
+                }
+
+            .communityBox {
+                display: block;
+                background-image: url("pape4.png");
+                background-position: center;
+                color: white;
+                width: 100%;
+                border-radius: 12px;
+                z-index: -1;
+
+            }
+            #fitade{
+                display: inline;
+                float: right;
+                }
+            .sticky {
+                position: fixed;
+                top: 0;
+                width: 100%;
+            }
+            .sticky + .mainArea {
+                padding-top: 0px;
+            }
+            .mainArea h3 {
+                font-family: minimal;
+
+            }
+
+    /*footer control*/
+            .happyfeet{
+                display: block;
+                color: white;
+                float: right;
+                left: 0;
+                bottom: 0;
+                position: bottom;
+                background-color: rgba(100, 100, 100, 0.8);
+                width: 100%;
+                font-size: 12px;
+            }
+        </style>
+    </head>
+<body>
+
+    <div class="topControl">
+        <video autoplay muted loop id="muhVid" width = "100%">
+            <source src="codeVid.mp4" type="video/mp4">
+        </video>
+        <div class = "topHeaderText">
+            <img src = "gatorlogo.png" width = 20%; id = "gatorade">
+            <h1>UHD CS Hub</h1>
+            <p>Welcome to the University of Houston Downtown</p>
+            <p>Computer science Resource center</p>
+        </div>
+    </div><!--end of topControl div-->
+
+    <div id = "navi"><!--hey! listen!!-->
+        <a href="javascript:void(0)">Home</a>
+        <a href="javascript:void(0)">Resources</a>
+        <a href="javascript:void(0)">Events</a>
+        <a href="javascript:void(0)">Classes</a>
+        <a href="javascript:void(0)">CS Clubs</a>
+        <a href="https://www.uhd.edu/myuhd/Pages/Student-Login.aspx">myUHD</a>
+        <a href="https://bb.uhd.edu/webapps/portal/execute/tabs/tabAction?tab_tab_group_id=_1_1" style="float:right">Blackboard</a>
+    </div><!--end of navi div-->
+
+    <div class="mainArea">
+        <img src = "gatorlogowhite.png" width = "100px" id = "gatorade">
+        <h3>Bon Jour, fellow students</h3>
+        <p>
+            Hey there Gators. We're just like you, learning the ins and outs of computer science while trying to gather as many resources that we can possibly find. You have many professors that are throwing work at you and giving you what you need to understand a subject, but with a community you can always take that one step further. Here at Gator CS hub we aim to establish that community so other people just like you can open source their resources and share their expierences that make them successful.
+
+        </p>
+    <div class = "resourcebox">
+        <img src = "booksInv.png" width = "100px" id = "bookade">
+        <h3>A few good resources</h3>
+            <p>
+                The most useful thing anyone be is prepared to take on the challenges at large. This requires knowlege passed down from the students that have already seen what you're about to encounter. Our Resources page was designed to do exactly that. Head on over to resources to get a view of what you need to pass your classes efficiently. Check out our 'resources' page to get started with community distributed information that will aid you in your sucessess as a student and future scientist in the computing field.
+
+            </p>
+        </div>
+    <div class = "clubBox">
+        <img src = "laptop.png" width = "100px" id = "laptopade">
+        <h3>Get your code on</h3>
+            <p>
+                Not every class can show you the ropes of computer science, and group projects are always a great start. Our CS clubs can fill that void. Clubs from gaming to penetration testing can allow you to dip your toes into the water of specialized fields before you take the course itself, or if you just enjoy the content so much you'd like to continue playing with the knowlege. Go beyond "hello world" in our CS clubs directory.
+
+            </p>
+        </div>
+    <div class = "communityBox">
+
+
+        <video autoplay muted loop id="muhVid2" width = "100%">
+            <source src="workingpeeps.mp4" type="video/mp4">
+        </video>
+
+
+        <img src = "fitness.png" width = 100px; id = "fitade">
+        <h3>A community of greatness</h3>
+            <p>
+                Events are always filled with like-minded people that attend things from hackathons to CASHI. The events page is a great place to get a general feel of the entire community at large. UHD student are free to participate not only in school oriented events, but city wide gathering that attract a wide variety of people from all the local business and schools to help you in your endeavors. Check out our Events page to stay up-to-date on whats going on in the city of Houston's techsphere.
+            </p>
+    </div>
+
+    </div>
+
+
+
+
+
+
+<!--this script allows navi to scroll to the top and stay put-->
+    <script>
+        window.onscroll = function() {myFunction()};
+
+        var navi = document.getElementById("navi");
+        var sticky = navi.offsetTop;
+
+        function myFunction() {
+        if (window.pageYOffset >= sticky) {
+            navi.classList.add("sticky")
+        }
+        else {
+            navi.classList.remove("sticky");
+            }
+        }
+    </script>
+
+    </body>
+
+
+<div class = "happyfeet">
+    <footer>
+        <p>&copy 2021 CS 4300 Fall Semester John Houston- Kassandra Martinez- Parth Patel- Kim Hernandez- Jose Enrique Perez</p>
+    </footer>
+</html>
