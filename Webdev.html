@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <style>
+            @font-face {
+                font-family: minimal;
+                src: url(minimalising.otf);
+            }
+            body{
+                background-image: url(./pape2.jpg);
+               
+                width: 100%;
+                padding: 0;
+                margin: 0;
+                color: white;
+                font-family:Arial, Helvetica, sans-serif;
+            }
+       
+        
+        .navi {
+                background-color: rgba(100, 100, 100, 0.8);
+                width: 100%;
+                overflow: hidden;
+                margin-top: 0;
+                float: top;
+                align-items: center;
+                text-align: center;
+            }
+            .navi li{
+                list-style: none;
+                display: inline-block;
+                padding-left: 100px;
+            }
+            .navi a{
+                text-decoration: none;
+                font-weight: bold;
+                color: black;
+                padding: 5px;
+                text-align: center;
+               
+            }
+            .navi a:hover{
+                color: white;
+                background-color: rgba(1, 1, 1, 0.5);
+                height:auto;
+                overflow: hidden;
+
+            }
+            .cs{
+                color: white;
+                font-size:80px;
+                padding: 20px;
+                text-align: center;
+                margin: auto;
+                margin-top: 20px;
+                
+                font-family: minimal;
+                background-color: rgba(1, 1, 1, 0.5);
+                width: 100%;
+                justify-content: center;
+                
+               
+            }
+      
+
+
+            .boxCtrl{
+                display: flex;
+                text-align: center;
+                font-weight: bolder;
+               
+        
+            }
+
+            .box1{
+                flex: 1;
+                margin: 25px;
+                padding: 10px;
+                
+                background-color: rgba(1, 1, 1, 0.5);
+                text-align: left;
+                border-radius: 10px;
+                justify-items: center;
+            }
+     
+            
+            ul{
+                list-style: none;
+                line-height: 1.8em;
+                font-size: large;
+                padding: 3px;
+            }
+            #review{
+                line-break: 1.8em;
+                padding-left: 0;
+                font-size: large;
+            }
+            #information{
+                font-size: large;
+                width: 100%;
+                Height: 100%
+            }
+            .box1 h1{
+                text-align: center;
+             }
+
+             .happyfeet{
+            display: block;
+            color: black;
+            font-weight: bold;
+            float: right;
+            left: 0;
+            bottom: 0;
+            position:fixed;
+            background-color: rgba(100, 100, 100, 0.8);               
+            width: 100%;
+            }
+            .SP{
+                text-align: center;
+                margin: auto;
+                padding: 10px;
+                color:blue;
+                text-shadow: none;
+                font-size: 175px;
+                font-weight: bolder;
+            }
+            span{
+                color: red;
+            }
+ 
+           
+
+            
+
+
+        </style>
+        
+    </head>
+    <body>
+        <div class = "navi">
+        <ul>
+            <li><a href = "#">home</a></li>
+            <li><a href = "#">resources</a></li>
+            <li><a href = "#">events</a></li>
+            <li><a href = "Class.html">classes</a></li>
+            <li><a href = "#">CS Clubs</a></li>
+        </ul>
+    </div>
+    
+        <h1 class="cs">CS4300-Web Programming</h1>
+    
+        <div class = "boxCtrl">
+            <div class = "box1">
+                <h1>Class information</h1> 
+                    <p id="information">Professor Zang was wonderful. Gives the best feedback. Also provides students with exam reviews that help guide students. 
+                        The term project is a group work that involves 4-5 students. 
+                        My advice is to learn as much Web dev as you can before you start. Although you learn what you need its helpful to have an understanding before you start. 
+                        The homeworks that are given follow along with the material so you will reinforce what your learning.
+                         Also become familiar with W3Schools because she uses it alot to help students understand material.</p>                 
+            </div><!--end div for box 1-->
+            <div class = "box1">
+                <h1>Review</h1>
+                    <ul>
+                        <li>Rating: 5/5 Stars </li>   
+                        <li>Course: CS 4300 Web Development</li>
+                        <li>Term: Fall 2021</li>
+                        <li>Professor: Ting Zang</li>
+                     </ul>
+           
+                <p id="review">Was the textbook required?: No</p>
+                <p id="review">Attendance Mandatory?: No</p>
+                <p id="review">Difficulty?: Balanced </p>
+                <p id="review">Group Work?: Yes</p>
+                <p id="review">Would you recommend taking professor?: FOR SURE</p>
+            </div><!--end div for box 2-->
+        </div><!--end div of box ctl-->
+        <div class="anim">
+            <p class="SP">UH<span>D</span></p>
+         </div>
+        <div class = "happyfeet">
+            <footer>
+                <p>&copy 2021 CS 4300 Fall Semester John Houston- Kassandra Martinez- Parth Patel- Kim Hernandez- Jose Enrique Perez</p>
+            </footer>
+        </div>
+    </body>
+</html>

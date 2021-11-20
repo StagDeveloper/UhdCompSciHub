@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <style>
+            @font-face {
+                font-family: minimal;
+                src: url(minimalising.otf);
+            }
+            body{
+                background-image: url(./pape2.jpg);
+                
+                width: 100%;
+                padding: 0;
+                margin: 0;
+                color: white;
+                font-family:Arial, Helvetica, sans-serif;
+            }
+       
+        
+        .navi {
+                background-color: rgba(100, 100, 100, 0.8);
+                width: 100%;
+                overflow: hidden;
+                margin-top: 0;
+                float: top;
+                align-items: center;
+                text-align: center;
+            }
+            .navi li{
+                list-style: none;
+                display: inline-block;
+                padding-left: 100px;
+            }
+            .navi a{
+                text-decoration: none;
+                color: black;
+                font-weight: bold;
+                padding: 5px;
+                text-align: center;
+               
+            }
+            .navi a:hover{
+                color: white;
+                background-color: rgba(1, 1, 1, 0.5);
+                height:auto;
+                overflow: hidden;
+
+            }
+            .cs{
+                color: white;
+                font-size:80px;
+                padding: 20px;
+                text-align: center;
+                margin: auto;
+                margin-top: 20px;
+                
+                font-family: minimal;
+                background-color: rgba(1, 1, 1, 0.5);
+                width: 100%;
+                justify-content: center;
+                
+               
+            }
+      
+
+
+            .boxCtrl{
+                display: flex;
+                text-align: center;
+                font-weight: bold;
+               
+        
+            }
+
+            .box1{
+                flex: 1;
+                margin: 25px;
+                padding: 10px;
+                
+                background-color: rgba(1, 1, 1, 0.5);
+                text-align: left;
+                border-radius: 10px;
+                justify-items: center;
+            }
+         
+            
+            ul{
+                list-style: none;
+                line-height: 1.8em;
+                font-size: large;
+                padding: 3px;
+            }
+            #review{
+                line-break: 1.8em;
+                padding-left: 0;
+                font-size: large;
+            }
+            #information{
+                font-size: large;
+                width: 100%;
+                Height: 100%
+            }
+            .box1 h1{
+                text-align: center;
+             }
+
+             .happyfeet{
+            display: block;
+            color: black;
+            font-weight: bold;
+            float: right;
+            left: 0;
+            bottom: 0;
+            position:fixed;
+            background-color: rgba(100, 100, 100, 0.8);               
+            width: 100%;
+            }
+            .SP{
+                text-align: center;
+                margin: auto;
+                padding: 10px;
+                color:blue;
+                text-shadow: none;
+                font-size: 175px;
+                font-weight: bolder;
+            }
+            span{
+                color: red;
+            }
+ 
+           
+
+            
+
+
+        </style>
+        
+    </head>
+    <body>
+        <div class = "navi">
+        <ul>
+            <li><a href = "#">home</a></li>
+            <li><a href = "#">resources</a></li>
+            <li><a href = "#">events</a></li>
+            <li><a href = "Class.html">classes</a></li>
+            <li><a href = "#">CS Clubs</a></li>
+        </ul>
+    </div>
+    
+        <h1 class="cs">CS 3331-Robotics</h1>
+    
+        <div class = "boxCtrl">
+            <div class = "box1">
+                <h1>Class information</h1> 
+                    <p id="information">Honestly a fun class if you’re interested in learning how to build and program a robot on an introductory level. The course requires a microprocessor and a robotics kit you can get off Amazon, and the example code for the projects is well documented and easy to understand. The group project is really fun and “hands-on”. Our project was a self-driving smart car that followed a path created by black tape, where the light and camera sensor picked on the path navigated by the contrast against a white platform. No matter where the tape was posted, the robot followed. The professor takes you through a step-by-step instruction, from the history of robotics to the modern ones. I would recommend this course for anyone willing to dip their toes into the water of automation.</p>                 
+            </div><!--end div for box 1-->
+            <div class = "box1">
+                <h1>Review</h1>
+                    <ul>
+                        <li>Rating: 5/5 Stars </li>   
+                        <li>Course: CS 3331 Robotics</li>
+                        <li>Term: Summer 2021</li>
+                        <li>Professor: Ting Zang</li>
+                     </ul>
+           
+                <p id="review">Was the textbook required?: No</p>
+                <p id="review">Attendance Mandatory?: Yes</p>
+                <p id="review">Difficulty?: 7/10 </p>
+                <p id="review">Group Work?: Yes</p>
+                <p id="review">Would you recommend taking professor?: Yes</p>
+            </div><!--end div for box 2-->
+        </div><!--end div of box ctl-->
+        <div class="anim">
+            <p class="SP">UH<span>D</span></p>
+         </div>
+        <div class = "happyfeet">
+            <footer>
+                <p>&copy 2021 CS 4300 Fall Semester John Houston- Kassandra Martinez- Parth Patel- Kim Hernandez- Jose Enrique Perez</p>
+            </footer>
+        </div>
+    </body>
+</html>
