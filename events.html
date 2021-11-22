@@ -1,0 +1,343 @@
+<!DOCTYPE html>
+<html lang=" ">
+  <head>
+    <meta charset="utf-8">
+    <title>Events & Calender</title>
+    <style>
+            *{
+                box-sizing: border-box;
+            }
+            body{
+                background-color:black;
+                background-image: url("pape2.jpg");
+                background-repeat: no-repeat;
+                background-position: center;
+                font-family: arial;
+                min-height: 100%;
+                min-width: 1024px;
+                width: 100%;
+                height: auto;
+                top: 0;
+                left: 0;
+                color: white;
+                width: 100%;
+                padding: 0;
+                margin: 0;
+
+            }
+            /*Navigation Design*/
+            .navi {
+                background-color: rgba(100, 100, 100, 0.8);
+                width: 100%;
+                overflow: hidden;
+                margin-top: 0;
+                float: top;
+                align-items: center;
+                text-align: center;
+                left: 0;
+                top: 0;
+                position:fixed;
+            }
+            .navi li{
+                list-style: none;
+                display: inline-block;
+                padding-left: 100px;
+                /*align-items: center;*/
+            }
+            .navi a{
+                text-decoration: none;
+                color: black;
+                padding: 5px;
+                text-align: center;
+            }
+            .navi a:hover{
+                color: white;
+                background-color: rgba(1, 1, 1, 0.5);
+                height:auto;
+                overflow: hidden;
+
+            }
+
+            /*page title*/
+            .topBox{
+                width: 100%;
+                align-items: center;
+                text-align: center;
+                background-color: rgba(10, 10, 10, 0.8);
+                margin-top: 50px;
+            }
+            .topBox h1{
+                font-size: 140px;
+            }
+            .topBox h2{
+                width: 10%;
+            }
+            .box{
+                
+                text-align: center;
+                float: center;
+                width: 50%;
+                height: auto;
+                margin: auto;
+                margin-bottom: 10px;
+                padding: 30px;
+                background-color: rgba(10, 10, 10, 0.8);
+                border-radius: 15px;
+            }
+
+ 
+            a {
+                color: aliceblue;
+
+            }
+            a:hover{
+                color: crimson;
+            }
+            .clr{
+                clear: both;
+            }
+            h1{
+                color: orange;
+            }
+            
+
+            table {
+                border-collapse: collapse;
+                border-spacing: 0;
+            }
+ 
+            td {
+                padding: 0;
+            }
+ 
+            .container {
+                height: 600px;
+                left: 25%;
+                margin: -300px 0 0 -300px;
+                position: absolute;
+                top: 50%;
+                width: 600px;
+            }
+ 
+            .calendar-container {
+                position: relative;
+                width: 518px;
+            }
+ 
+            .calendar-container header {
+                border-radius: 1em 1em 0 0;
+                background: #67d9fc;
+                color: #ffffff;
+                padding: 3em 2em;
+            }
+ 
+            .day {
+                font-size: 8em;
+                font-weight: 900;
+                line-height: 1em;
+            }
+ 
+            .month {
+                font-size: 4em;
+                line-height: 1em;
+                text-transform: capitalize;
+            }
+ 
+            .calendar {
+                background: #ffffff;
+                border-radius: 0 0 1em 1em;
+                -webkit-box-shadow: 0 2px 1px rgba(0, 0, 0, 0.2), 0 3px 1px #fff;
+                box-shadow: 0 2px 1px rgba(0, 0, 0, 0.2), 0 3px 1px #ffffff;
+                color: #555;
+                display: inline-block;
+                padding: 2em;
+            }
+ 
+            .calendar thead {
+                color: #e66b6b;
+                font-weight: 700;
+                text-transform: uppercase;
+            }
+ 
+            .calendar td {
+                padding: 0.5em 1em;
+                text-align: center;
+            }
+ 
+            .calendar tbody td:hover {
+                background: #cacaca;
+                color: #ffffff;
+            }
+ 
+            .current-day {
+                color: #e24545;
+            }
+ 
+            .prev-month,
+            .next-month {
+                color: #dddada;
+            }
+ 
+            .ring-left,
+            .ring-right {
+                position: absolute;
+                top: 260px;
+            }
+ 
+            .ring-left {
+                left: 2em;
+            }
+            .ring-right {
+                right: 2em;
+            }
+ 
+            .ring-left:before,
+            .ring-left:after,
+            .ring-right:before,
+            .ring-right:after {
+                background: #ffffff;
+                border-radius: 4px;
+                -webkit-box-shadow: 0 3px 1px rgba(0, 0, 0, 0.3),
+                0 -1px 1px rgba(0, 0, 0, 0.2);
+                box-shadow: 0 3px 1px rgba(0, 0, 0, 0.3), 0 -1px 1px rgba(0, 0, 0, 0.2);
+                content: "";
+                display: inline-block;
+                margin: 8px;
+                height: 32px;
+                width: 8px;
+            }
+
+
+
+            /*footer control*/
+            .happyfeet{
+                display: block;
+                color: #ffffff;
+                float: right;
+                left: 0;
+                bottom: 0;
+                position:fixed;
+                background-color: rgba(100, 100, 100, 0.8);
+                width: 100%;
+            }
+        </style>
+    </head>
+
+
+    
+<!--Magic navigation bar divider-->
+    <div class = "navi">
+        <ul>
+            <li><a href = "home2.html">Home</a></li>
+            <li><a href = "IdeResources.html">Resources</a></li>
+            <li><a href = "events.html">Events</a></li>
+            <li><a href = "reviewpage.html">Classes</a></li>
+            <li><a href = "community.html">CS Clubs</a></li>
+        </ul>
+    </div>
+<!--end navigation bar-->
+  
+<body>
+ 
+    <div class="container">
+   
+      <div class="calendar-container">
+   
+        <header>
+   
+          <div class="day">22</div>
+          <div class="month">November</div>
+   
+        </header>
+   
+        <table class="calendar">
+   
+          <thead>
+   
+            <tr>
+   
+              <td>Mon</td>
+              <td>Tue</td>
+              <td>Wed</td>
+              <td>Thu</td>
+              <td>Fri</td>
+              <td>Sat</td>
+              <td>Sun</td>
+   
+            </tr>
+   
+          </thead>
+   
+          <tbody>
+   
+            <tr>
+              <td>1</td>
+              <td>2</td>
+              <td>3</td>
+              <td>4</td>
+              <td>5</td>
+              <td>6</td>
+              <td>7</td>
+            </tr>
+   
+            <tr>
+              <td>8</td>
+              <td>9</td>
+              <td>10</td>
+              <td>11</td>
+              <td>12</td>
+              <td>13</td>
+              <td>14</td>
+            </tr>
+   
+            <tr>
+              <td>15</td>
+              <td>16</td>
+              <td>17</td>
+              <td>18</td>
+              <td>19</td>
+              <td>20</td>
+              <td>21</td>
+            </tr>
+   
+            <tr>
+              <td class="current-day">22</td>
+              <td>23</td>
+              <td>24</td>
+              <td>25</td>
+              <td>26</td>
+              <td>27</td>
+              <td>28</td>
+            </tr>
+   
+            <tr>
+              <td>29</td>
+              <td>30</td>
+              <td class="next-month">1</td>
+              <td class="next-month">2</td>
+              <td class="next-month">3</td>
+              <td class="next-month">4</td>
+              <td class="next-month">5</td>
+            </tr>
+   
+          </tbody>
+   
+        </table>
+   
+        <div class="ring-left"></div>
+        <div class="ring-right"></div>
+   
+      </div> <!-- end calendar-container -->
+   
+    </div> <!-- end container -->
+   
+  </body>
+  
+  
+  
+  <div class = "happyfeet">
+    <footer>
+      <p> &copy 2021 CS 4300 Fall semester John Houston - Kassandra Martinez - Parth Patel - Kimberly Hernandez - Jose Enrique Perez</p>
+    </footer>
+  </div>
+</html>
