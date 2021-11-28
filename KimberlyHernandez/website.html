@@ -1,0 +1,258 @@
+<!DOCTYPE html>
+
+<!-- Fig. 2.1: main.html -->
+<!-- First HTML5 example. -->
+<html>
+
+<head>
+   <meta charset="utf-8">
+   <title>About Me</title>
+</head>
+<style>
+   .flex-container {
+      display: flex;
+      justify-content: center;
+      color: white;
+
+
+   }
+
+   .flex-container>div {
+      background-color: blueviolet;
+      font-size: 20px;
+      padding: 40px;
+      border: 15px solid blue;
+   
+
+
+   }
+   .flex-container>h1 
+   {
+      font-family: "fantasy", papyrus;
+
+
+   }
+   .flex-container>h2 
+   {
+      font-family: "fantasy", papyrus;
+      margin: 40px;
+
+
+   }
+
+   body 
+   {
+   
+      background-image: url("background.jpg");
+      background-repeat: no-repeat;
+      background-size: cover;
+      background-attachment: fixed;
+      background-color: #cccccc;
+
+
+   }
+   @media only screen and (max-width: 2000px){
+      body
+      {
+         background-image: url("World_Map.jpg");
+         background-repeat: no-repeat;
+         background-size: cover;
+         background-attachment: fixed;
+         background-color: #cccccc;
+        
+      }
+
+      .flex-container 
+      {
+         display: flex;
+         justify-content: center;
+         color: red;
+         animation-name: changeTextColor;
+         animation-duration: 5s;
+         animation-iteration-count: infinite;
+         animation-direction: alternate;
+         
+          
+      }
+      @keyframes changeTextColor
+      {
+         
+         0%{color: red;}
+         50%{color:blue;}
+         100%{color:yellow;}
+     
+      }
+
+   }
+
+
+   
+
+   
+   
+   @media print
+   {
+      
+      body{
+         
+         background-color: blanchedalmond;
+      }
+      .flex-container 
+      {
+         color: black;
+      }
+   }
+</style>
+
+<body>
+
+ 
+   <div class="flex-container">
+      <h1 class="flex-container">Interesting Stuff</h1>
+   </div>
+   <div class="flex-container">
+      <h2>This Page contins a little bit of my background as well as some stuff I
+         find Interesting</h2>
+
+   </div>
+  
+   <div class="flex-container">
+      <img src="ReningStrength1.jpg" alt="ReingingStrength">
+      <img src="boundry.jpg" alt="Boundry Watters">
+   </div>
+
+
+   <div class="flex-container">
+      <h2 style= "margin: 40px; font-family: sans-serif;">I am a student at UHD I will Graduate Spring 2022 With a degree in computer science. I have
+         had a passion for technology sense a young age
+         and it is my hope to use that passion to give back to the community. I am involved with a Nonprofit Therapeutic
+         Horseback Riding Center In Richmond Tx called
+         <a style="color:greenyellow" href="https://www.reiningstrength.org/">ReingingStrength</a>. I love the elated
+         feeling that comes after solveing a difficult problem. When you find that bug in the code and finnaly fix it
+         is quite the rush. I am looking for a position in the computer science feild and hope to find one before I
+         graduate. I have worked in hardware fixing printers monitors and scanners for a liveing and while
+         Intrestesing I find the challenge that comes with software to be fore more enjoyable. I am exctied to be in
+         thisclass and to broden my knollage in the growing feild of web Develoupment. Below you can see
+         The centers Logo. If your curious about what the center uses for there website, well they use wix. Rening Strength websight is eazy to navigate and very
+         informative with ought overwhelming the viewer.
+
+      </h2>
+   </div>
+
+
+   <div class="flex-container">
+      
+      <ul  style= "margin: 40px;"> FUN STUFF I DO!!!
+         <li>Canoeing</li>
+         <li>Play the Uklele </li>
+         <li>Play the Bass </li>
+         <li>Computer Gameing</li>
+         <li>Running Minecraft server</li>
+         <li>Rock Climibing</li>
+         <li>Longboarding</li>
+         <li>Build PC's</li>
+         <li>Woodwork</li>
+         <li>Reining Strength Volenter </li>
+         <li>Running Gameing Comunity's Discord</li>
+         <li>PokeyMon Go</li>
+         <li>Cosplay</li>
+
+      </ul>
+      <div>
+         <table style="width:100%;"  border="1">
+
+            <!-- the <caption> tag summarizes the table's -->
+            <!-- contents (this helps visually impaired people) -->
+            <caption ><strong>Table of projects and Time Spent on them</strong></caption>
+
+            <!-- the <thead> section appears first in the table -->
+            <!-- it formats the table header area -->
+            <thead>
+               <tr>
+                  <!-- <tr> inserts a table row -->
+                  <th style="text-size-adjust: 25;">project</th> <!-- insert a heading cell -->
+                  <th>Time Spent</th>
+               </tr>
+            </thead>
+
+            <!-- the <tfoot> section appears last in the table -->
+            <!-- it formats the table footer -->
+            <tfoot>
+               <tr>
+                  <th>Avrage time spent</th>
+                  <th style="text-align: left;"> 14 hours</th>
+               </tr>
+            </tfoot>
+
+            <!-- all table content is enclosed -->
+            <!-- within the <tbody> -->
+            <tbody>
+               <tr>
+                  <td>Gradebook </td> <!-- insert a data cell -->
+                  <td>10 hours</td>
+               </tr>
+               <tr>
+                  <td>Comic Database</td>
+                  <td>20 hours</td>
+               </tr>
+               <tr>
+                  <td>Game Base serch support</td>
+                  <td>48 hours</td>
+               </tr>
+               <tr>
+                  <td>Facial recognishion lock</td>
+                  <td>8 hours</td>
+               </tr>
+               <tr>
+                  <td>Coin world</td>
+                  <td>48 hours</td>
+               </tr>
+               <tr>
+                  <td>Minecraft server</td>
+                  <td>8 hours </td>
+               </tr>
+            </tbody>
+         </table>
+      </div>
+   </div>
+   <div class="flex-container">
+      <form>
+         <div class="flex-container">
+           <h1>Enter your name </h1> 
+         </div>
+         <div class="flex-container">
+            <input type = "text">
+         </div>
+        
+
+         <div class="flex-container">
+           <h1>If you have any questions ask them here and leave some contact info. </h1> 
+         </div>
+           
+
+         <div class="flex-container">
+            <textarea cols = "80" rows ="20">
+            </textarea>
+        
+            
+         </div>
+         <br>
+         <br>
+         <div  style ="justify-content: space-around;" style = "margin: 30px;" class = "flex-container" >
+            <input   type = "submit" value="Submit">
+            <input type ="reset" value = "Clear">
+         
+         </div>
+         <br>
+         <br>     
+      
+        
+      </form>
+   </div>
+
+
+
+
+</body>
+
+</html>
