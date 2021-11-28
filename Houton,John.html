@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title>About me</title>
+		<style>
+			body{
+				background-image: url("nexus.jpg");
+				background-repeat: no-repeat;
+			  	background-size: cover;
+				background-attachment: fixed;
+				font-family:monospace;
+				font-weight: bolder;
+				
+				}
+				img {
+					display: block;
+					margin-left: auto;
+ 					margin-right: auto;
+  					width: 35%;
+					animation: myimage linear 10s infinite 1s alternate;
+					position: relative;
+					
+				}
+				@keyframes myimage{
+					0% {opacity: 0; left: 50px; top: 0px;}
+					25% {opacity: 1; left: 0px; top:5 0px;}
+					50% {opacity: 0; left: 50px; top: 100px;}
+					75% {opacity: 1; left: 100px; top: 50px;}
+					100% {opacity: 0; left: 50px; top: 0px;}
+				}
+				
+				p{
+					color: azure; 
+					font-size: 30px;
+					font-weight: bold;
+				}
+				ul{
+					line-height: 100%;
+					color:white
+				}
+				table{
+					color:white
+					
+				}	
+				.flex-container{
+					display: flex;
+					justify-content:center;
+					
+				}
+				.flex-container > div {
+					color: white;
+					text-align: center;
+					font-size: 40px;
+					
+				}
+				th, td{
+					font-size: 20px;
+				}
+				caption{
+					font-size: 20px;
+				}
+				@media print{
+					body{background-color: white; }
+					.flex-container
+					{color: black;}
+
+				}
+
+				.boxmodule{
+					
+					background-color: aqua;
+					margin: 50px;
+					border-width: thick;
+					width: 50%;
+					height: 90px;
+					text-align: center;
+					padding: 30px;
+					position: relative;
+					left: 20%;
+					border-style: groove;
+					
+				}
+			}
+				
+				
+
+
+		
+		</style>
+	</head>
+
+	<body>
+		<p><img  src="weddevpic.jpg" alt=""></p>
+		<p>My name Is John Houston and I am a senior here at UHD. I will be graduating next May 2022. As of right now
+			my main focus has been in software development, but over the summer I started to learn Web Dev on my own.
+			Im hoping that during my last year of school I will be able to find some kind of internship or job in the field
+			of front end or back end development (possible fullstack). I would personally like to start at front end then move around
+			to backend because I enjoy the whole designing of web pages. In june I decided to get a head start and pay for a class 
+			on Web Dev from Udemy. I found <strong>Udemy</strong> to very helpful in the fact that they give follow along videos on how to 
+			and also at the end of every section they give you a complete project to work on to see if you have been able
+			to keep up. In taking the Udemy course, I was able  to finish HTML and start on CSS but did not get a chance to finish.
+			I am hoping that with what I have learned from Udemy and what we will cover in class will give me enough skills to 
+			start Web Dev on my own. I have also included a link to the Udemy website for the interested reader to go 
+			and visit the site.
+		</p>
+		
+		<div class="flex-container">
+			<div><a href="https://www.udemy.com/" style="color:white" target="_blank" >Udemy.com</a></div>
+		</div>
+		<br>
+		<br>
+		<br>
+		<div class="flex-container">
+		<p style="background-color: black; border-radius: 15px;">
+			Here is a list of sections I have completed With
+			Udemy for Web dev
+		</p>
+	</div>
+		<div class="flex-container">
+		<ul style="font-size: 25px;">
+			<li>Getting started</li>
+			<li>HTML5 Basics</li>
+			<li>Becoming familiar with HTML5</li>
+			<li>Introduction to CSS</li>
+			<li>DreamWeaver (just started)</li>
+		</ul>
+	</div>
+		<br>
+		<div class="flex-container">
+		<table style="width: 50% ;" border="3" style="font-size: 40px;">
+			<caption > <strong> Below is a table of the times I 
+				spent on each section </strong>
+			</caption>
+			<thead>
+				<tr>
+					<th>
+						Section
+					</th>
+					<th>
+						Time
+					</th>
+				</tr>
+			</thead>
+			<tbody>
+				<tr>
+					<td>Getting Started</td>
+					<td>8 min</td>
+				</tr>
+				<tr>
+					<td>HTML5 Basics</td>
+					<td>14 Min</td>
+				</tr>
+				<tr>
+					<td>Becoming familiar with HTML5</td>
+					<td>7 Min</td>
+				</tr>
+				<tr>
+					<td>Introduction to CSS</td>
+					<td>31 Min</td>
+				</tr>
+				<tr>
+					<td>DreamWeaver (just started)</td>
+					<td>12 Min</td>
+				</tr>
+			</tbody>
+			<tfoot>
+				<tr>
+					<th>Total Time</th>
+					<th>72 Min</th>
+				</tr>
+			</tfoot>
+		</table>
+	</div>
+	<br>
+	<br>
+	<br>
+	<form>
+	<div class="flex-container">
+		<p style="background-color: black;border-radius: 15px;">
+			If you would like to leave a comment please enter your name along with any 
+			question you may have.
+		</p>
+	</div>
+		<div class="flex-container">
+			<div>Name: <input type="text"></div>
+			<div>Comments or questions: <textarea cols="30" rows="10"></textarea></div>
+		</div>
+		<div class="flex-container" style="justify-content: space-around;">
+			<input type="submit" value="Submit">
+			<input type="reset" value="Clear Form">
+		</div>
+	</form>
+	<p class="boxmodule">
+		Please visit <a href="https://www.w3schools.com/">w3schools</a> for any tips and tricks on learning HTML and CSS
+	</p>
+	</body>
+</html>
