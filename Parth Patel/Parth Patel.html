@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html lang="en">
+
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+        <title>Parth Patel</title>
+
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap"
+            rel="stylesheet">
+        <style>
+                body {
+                    font-family: "Poppins", sans-serif;
+                    margin: 0;
+                }
+                
+                img {
+                    border-radius: 120px 20px 120px 20px;
+                }
+                
+                h1 {
+                    font-size: 50px;
+                }
+                
+                h1 {
+                    font-size: 40px;
+                }
+                
+                .orange-color {
+                    color: orange;
+                }
+                
+                .flexible-container {
+                    display: flex;
+                    margin-bottom: 50px;
+                }
+                
+                .half-width {
+                    width: 50%;
+                    padding-top: 5%;
+                    padding-left: 5%;
+                    text-align: justify;
+                }
+                
+                .half-width p {
+                    padding-right: 50px;
+                }
+                
+                .half-width img {
+                    width: 80%;
+                    padding-top: 30px;
+                }
+
+                .top-banner {
+                    background-image: url("images/top-banner.png");
+                    background-repeat: no-repeat;
+                    box-sizing: border-box;
+                }
+                
+                .dream-big {
+                    background-image: url("images/dream-bg.png");
+                    background-repeat: no-repeat;
+                    background-position: right;
+                    box-sizing: border-box;
+                }
+                
+                .experience-area {
+                    background-image: url("images/exp-bg.png");
+                    background-repeat: no-repeat;
+                    background-position: left;
+                    box-sizing: border-box;
+                }
+                
+                .experience-item {
+                    width: 40%;
+                    margin-left: 5%;
+                    margin-right: 5%;
+                    padding-left: 30px;
+                    padding-right: 30px;
+                    border-radius: 10px;
+                    box-shadow: 10px 10px 40px gray;
+                    text-align: justify;
+                }
+                
+                #full-stack-experience {
+                    border-left: 7px solid;
+                    border-image: linear-gradient(yellow, tomato);
+                    border-image-slice: 1;
+                }
+                
+                #web-dev-experience {
+                    border-left: 7px solid;
+                    border-image: linear-gradient(blue, cyan);
+                    border-image-slice: 1;
+                }
+                
+                footer p {
+                    text-align: center;
+                }
+                
+                .experience-area h1 {
+                    padding: 5%;
+                }
+                
+        </style>
+
+    </head>
+
+    <body>
+        <section class="top-banner flexible-container">
+            <div class="half-width">
+                <h1>Greetings!</h1>
+                <h1> I'm <span class="orange-color">Parth Patel</span></h1>
+                <h3>Full Stack Web Developer | Python-Django Developer</h3>
+                <p>I'm in my senior year of pursuing a bachelor's in computer science.
+                    I seek to learn Artificial Intelligence and Cyber-Security alongside
+                    being a full stack developer.
+                </p>
+                <p>
+                    In my free time, I like to chill by playing games, watching movies and tv-series. 
+                    My favorite genre is horror and mystery. I also love listening to podcast and lo-fi music
+                    during my work or when I'm studying. I like going on hikes and try new sportsactivites. 
+                    One unique thing about me is that I'm fluent in 4 languages and can partly understand 3 more.
+                    I also like to keep myself on trend with latest technologies, innovations, and cars.
+                </p>
+                <br>
+                <p>My favorite Games to play:</p>
+                <li>Counter Strike : GO</li>
+                <li>Age of Empires 2 </li>
+                <li>Fifa 21 </li>
+                <li>Chess</li>
+                <li>Sudoku</li>
+                <li>Forza Horizon 5</li>
+                
+            </div>
+            <div class="half-width">
+                <img src="images/pic2.jpg" alt="Parth Patel">
+            </div>
+        </section>
+
+        <section class="experience-area">
+            <h1>My Experiences</h1>
+            <div class="flexible-container">
+                <div id="full-stack-experience" class="experience-item">
+                    <h2>Web Developing </h2>
+                    <h3 class="orange-color">2021-Present | Beginner Level Developer</h3>
+                    <p>I started web programmming and learned the basics of html from highschool.
+                        But i got into depth with web programming through this class and used online tools to help me 
+                        increase my knowledge. I love the web designing part, it really motivates me to put my ideas
+                        on the web. 
+                    </p>
+
+                </div>
+                <div id="web-dev-experience" class="experience-item">
+                    <h2>Full Stack Developing </h2>
+                    <h3 class="orange-color">2019-2021 | Programming Learner</h3>
+                    <p>I used C++ as my first and primary coding language, I learned the fundamentals and algorithms of it, 
+                        even learned few other languages like python, C#, javascript and C. With C++, i gained the knowledge 
+                        of making a database and programming games and windows applications. 
+                    </p>
+                </div>
+            </div>
+        </section>
+
+        <section class="dream-big flexible-container">
+
+            <div class="half-width">
+                <img src="images/pic1.jpg" alt="Parth Patel">
+            </div>
+
+            <div class="half-width">
+                <h1>Dream Big</h1>
+                <h3>Become a web developer</h3>
+                <p>I already learned the basic HTML and CSS through my highschool and got more polished through this 
+                    class as well as online sources like edx, codeacademy or W3schools . I can now build any simple
+                    website. I can even teach my grandma
+                    how to make simple website. My goal is to build few more websites and learn
+                    advanced topics.</p>
+                    <br>
+                    <br>
+
+                <h3>What is your favorite car brand?</h3>
+                    <form>
+                        <input type="radio" id="lamborghini" name="fav_car" value="Lamborghini ">
+                        <label for="car">Lamborghini &#128003</label><br>
+                        <input type="radio" id="ferrari" name="fav_car" value="Ferrari">
+                        <label for="car">Ferrari &#128014</label><br>
+                        <input type="radio" id="bugatti" name="fav_car" value="Bugatti ">
+                        <label for="car">Bugatti &#128030</label><br>
+                        <input type="radio" id="tesla" name="fav_car" value="Tesla">
+                        <label for="car">Tesla &#9889</label><br>
+                        <input type="radio" id="porsche" name="fav_car" value="Porsche">
+                        <label for="car">Porsche &#128052</label><br>
+                        <input type="radio" id="prius" name="fav_car" value="Prius">
+                        <label for="car">Prius &#128056</label><br>
+                        <input type="radio" id="none" name="fav_car" value="None">
+                        <label for="car">I prefer bus &#128652</label><br>
+                        <br />
+                        <input type="submit" value="Submit" />
+                    </form> <br />
+                
+            </div>
+        </section>
+
+        <footer>
+            <p>It's hard way to achieve something but even harder to loose it.</p>
+        </footer>
+
+    </body>
+
+</html>
