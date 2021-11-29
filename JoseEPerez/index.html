@@ -1,0 +1,165 @@
+<!--Jose Enrique Perez-->
+<!--Personal project website-->
+<!--Play page-->
+<!DOCTYPE html>
+<html lang="">
+  <head>
+    <meta charset="utf-8">
+    <title>JPs Basement</title>
+    <style>
+        @font-face {
+            font-family: tapes;
+            src: url(tapes.ttf);
+        }
+        
+        
+        @media only screen and (max-width: 500px) {
+            body {
+                background-color: rgba(255, 255, 255, 1);
+                }
+            }
+        
+        
+        
+        body{
+            font-family: arial;
+            color: white;
+            background-color: black;
+            background-image: url("wall2.jpg");
+            background-repeat: no-repeat;
+            background-position: center;
+            width: auto;
+            min-height: 100%
+            padding: 0;
+            margin: 0;
+
+        }
+        .bannerlord img{
+            max-width: 100%;
+            max-height: 100%;
+        }
+        .navi{
+            background-color: rgba(0, 0, 0, 0.5);
+            overflow: hidden;
+            backdrop-filter: blur(10px);
+        }
+        .navi a {
+            float: left;
+            text-align: center;
+            display: inline-block;
+            list-style: none;
+            text-decoration: none;
+            padding: 14px 16px;
+            font-size: 18px;
+            color: white;
+            text-align: right;
+        }
+        .navi a:hover{
+            color: purple;
+            background-color: rgba(255, 255, 255, 0.3);
+            backdrop-filter: blur(10px);
+
+        }
+        .navi input[type=text] {
+            float: right;
+            padding: 6px;
+            border: none;
+            margin-top: 8px;
+            margin-right: 16px;
+            font-size: 17px;
+  
+        }
+        @keyframes rotation {
+            from {
+                transform: rotate(0deg);
+            }
+            to {
+                transform: rotate(359deg);
+            }
+        }
+
+        .muh_info img{
+            border-radius: 50%;
+            display: inline;
+            float: left;
+            width: 150px;
+            padding: 20px;
+            animation: rotation 2s;
+            animation-timing-function: linear;
+            animation-iteration-count: infinite;
+            }
+        .muh_info {
+            display: inline-block;
+            width: 700px;
+            margin-right: 100px;
+            background-color: rgba(0, 0, 0, 0.3);
+            border-radius: 0px 25px 25px 0px;
+            float: left;
+            backdrop-filter: blur(10px);
+        }
+        .sub_info img{
+            border-radius:50%;
+            width: 150px;
+            float: right;
+            display: inline;
+            padding: 20px;
+            animation: rotation 2s;
+            animation-timing-function: linear;
+            animation-iteration-count: infinite;
+        }
+        .sub_info {
+            display: inline;
+            float: right;
+            text-align: right;
+            background-color: rgba(0, 0, 0, 0.3);
+            border-radius: 25px 0px 0px 25px;
+            width: 700px;
+            margin-top: 12px;
+            backdrop-filter: blur(10px);
+            }
+        h1 {
+            font-family: tapes;
+            font-size: 100px;
+            color: rgb(100, 150, 250);
+        }
+
+        .happy_feet{
+            float: bottom;
+            position: bottom;
+        }
+    </style>
+
+  </head>
+
+  <nav class = "navi">
+        <a href = "#">home</a>
+        <a href = "#">projects</a>
+        <a href = "#">studio</a>
+        <a href = "#">gallary</a>
+        <a href = "#">about me</a>
+        <input type="text" placeholder="Search..">
+  </nav>
+  <body>
+    <main>
+    <h1>Welcome, dweller</h1>
+    <div class = "muh_info">
+        <img src = "deer_monk.jpg" />
+        <p>Hey there!
+       Hey there, I'm Jose Enrqure Perez. I'm currently a student at the University of Houston Downtown studying Computer Science. I focus some of my time on Open Source software and enjoy low-level programming. My favorite languages are C, C++, NIM, and Python. I'm also a huge fan of table top board games such as Pathfinder and Shadowrun. I enjoy the great outdoors, such as camping, bicycling, and rock climbing. The thing I do most in my free time out side of Computer Science, is reading Science Fiction novels. I live with a chihuahua and a leopard gecko. My family runs a small tropical farm in Mayaguez, Puerto Rico, which grows coffee, plantains, bananas, yucca, and various peppers.
+       <br>
+       to learn more about the gnu project visit: <a href = "#">gnu.org</a>
+            </p>
+        </div>
+ 
+    <div class = "sub_info">
+        <img src = "deergod2.jpeg"/>
+        <p>To go into detail about my CS degree, I extensively study Open Source operating systems such as BSD, UNIX and delve into UNIX-Like systems like Linux Distributions and the Minix kernel. Most of my development work is done a computer running FreeBSD 13, Debian, or Arch Linux. I've worked on a few Android projects during my time at UHD, and I'm currently enrolled in classes in Artifical Intellegence, Machine Learning, Web Development, and Mathematics. When I graduate from UHD, I plan on contributing to Free Open Sorce Software while working on my own projects. If I could find work as an embedded system developer to utilize the knowlege I've learning from working with open soruce operating systems, I would be happy with specializing in that field.</p>
+
+    </div>
+    </main>
+    <br>
+
+    <footer class = "happy_feet">
+    </footer>
+  </body>
+</html>
