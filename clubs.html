@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>CS Clubs</title>
+    <link rel="stylesheet" href="clubStyles.css">
+  </head>
+
+  <body>
+    <!--Navigation Bar Template-->
+        <div class = "navi">
+            <ul>
+                <li><a href = "#">home</a></li>
+                <li><a href = "#">resources</a></li>
+                <li><a href = "#">events</a></li>
+                <li><a href = "reviewpage.html">classes</a></li>
+                <li><a href = "clubs.html">CS Clubs</a></li>
+            </ul>
+        </div>
+
+    <!--Header/Nav Template-->
+    <h1>CS Clubs at UHD</h1>
+
+    <!--ACM-->
+    <a class="clubLinks" href="https://www.instagram.com/uhdacm/?hl=en">Association for Computing Machinery (ACM)</a>
+    <!--Animated Images from ACM-->
+    <div class="slideshow-container">
+      <div class="acmSlides fade">
+        <img class="imgSizing" src="fixed/acm1.png" >
+      </div>
+
+      <div class="acmSlides fade">
+        <img class="imgSizing" src="fixed/acm2.png" >
+      </div>
+
+      <div class="acmSlides fade">
+        <img class="imgSizing" src="fixed/acm3.png" >
+      </div>
+    </div>
+    <br>
+
+    <div style="text-align:center">
+      <span class="dot"></span>
+      <span class="dot"></span>
+      <span class="dot"></span>
+    </div>
+
+  <script>
+    var slideIndex1 = 0;
+    showSlides1();
+
+    function showSlides1() {
+      var i;
+      var slides1 = document.getElementsByClassName("acmSlides");
+      var dots1 = document.getElementsByClassName("dot");
+      for (i = 0; i < slides1.length; i++) {
+        slides1[i].style.display = "none";
+      }
+      slideIndex1++;
+      if (slideIndex1 > slides1.length) {
+        slideIndex1 = 1
+      }
+      for (i = 0; i < dots1.length; i++) {
+        dots1[i].className = dots1[i].className.replace(" active", "");
+      }
+      slides1[slideIndex1-1].style.display = "block";
+      dots1[slideIndex1-1].className += " active";
+      setTimeout(showSlides1, 3000); // Change image every 3 seconds
+    }
+  </script>
+
+  <p class="brief">
+    Our mission is to empower students and help them find their path in Computer Science,
+    Data Science or MIS. We do so by running a variety of student-led programming workshops,
+    events, coding competitions, and more.
+  </p>
+
+    <!--CAHSI-->
+    <a class="clubLinks" href="https://sites.google.com/view/uhdcahsi/home">Computing Alliance of Hispanic-Serving Institutions (CAHSI)</a>
+
+    <div class="slideshow-container">
+      <div class="cahsiSlides fade">
+        <img class="imgSizing" src="fixed/cahsi1.png" >
+      </div>
+
+      <div class="cahsiSlides fade">
+        <img class="imgSizing" src="fixed/cahsi2.png" >
+      </div>
+
+      <div class="cahsiSlides fade">
+        <img class="imgSizing" src="fixed/cahsi3.png" >
+      </div>
+    </div>
+    <br>
+
+    <div style="text-align:center">
+      <span class="dot2"></span>
+      <span class="dot2"></span>
+      <span class="dot2"></span>
+    </div>
+
+  <script>
+    var slideIndex2 = 0;
+    showSlides2();
+
+    function showSlides2() {
+      var j;
+      var slides2 = document.getElementsByClassName("cahsiSlides");
+      var dots2 = document.getElementsByClassName("dot2");
+      for (j = 0; j < slides2.length; j++) {
+        slides2[j].style.display = "none";
+      }
+      slideIndex2++;
+      if (slideIndex2 > slides2.length) {slideIndex2 = 1}
+      for (j = 0; j < dots2.length; j++) {
+        dots2[j].className = dots2[j].className.replace(" active", "");
+      }
+      slides2[slideIndex2-1].style.display = "block";
+      dots2[slideIndex2-1].className += " active";
+      setTimeout(showSlides2, 3000); // Change image every 3 seconds
+    }
+  </script>
+
+  <p class="brief">
+    Our mission is to grow and sustain a networked community committed to recruiting, retaining and
+    accelerating the progress of Hispanics in computing at UHD. CAHSI
+    hosts varieties of workshops and events to gain professional skills for the STEM
+    industry.
+  </p>
+
+    <!--Footer Template-->
+    <div class = "happyfeet">
+        <footer>
+            <p>&copy 2021 CS 4300 Fall Semester John Houston- Kassandra Martinez- Parth Patel- Kimberly Hernandez- Jose Enrique Perez</p>
+        </footer>
+    </div>
+  </body>
+</html>
